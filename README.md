@@ -70,7 +70,7 @@ Content-Type: application/json
 
 #### Структура: 
 ```
-service.app_db.py - инициализация бд и функции добавлоения и выборки записей из бд
+db.app_db.py - инициализация бд и функции добавлоения и выборки записей из бд
 service.insert_from_moex.py - наполняем базу приложения данными moex
 service.get_summary.py - считаем % на данных moex из базы приложения
 service.moex_rest.py - запрос к moex api
