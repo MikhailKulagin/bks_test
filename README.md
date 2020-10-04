@@ -14,6 +14,7 @@ moex api, и расчета процента изменения котирово
 и запуск контейнера
 `docker run --rm -it -p 8005:8005 bks_test:0.0.1`
 5. Делаем запрос к методу insert_from_moex, чтобы получить котировки по заданным бордам и инструментам.
+
 Если делаем из коммандной строки curl-ом:
 ```
 curl --header "Content-Type: application/json" \
@@ -29,6 +30,7 @@ curl --header "Content-Type: application/json" \
 }' \
  http://localhost:8005/
 ```
+
 Если пользуемся pycharm, то в файле `.http`:
 ```
 POST http://localhost:8005/
@@ -45,6 +47,7 @@ Content-Type: application/json
 }
 ```
 6. Делаем запрос к методу get_summary, чтобы получить проценты изменнеий по котировкам
+
 cURL:
 ```
 curl --header "Content-Type: application/json" \
@@ -56,6 +59,7 @@ curl --header "Content-Type: application/json" \
 }' \
  http://localhost:8005/
 ```
+
 PyCharm:
 ```
 POST http://localhost:8005/
